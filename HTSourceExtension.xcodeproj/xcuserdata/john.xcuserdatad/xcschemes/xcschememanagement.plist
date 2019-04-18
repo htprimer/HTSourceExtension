@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HTSource.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>HTSourceExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>52098AE420B3EE3500DC9AC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52098AFA20B3EE3700DC9AC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52098B0520B3EE3700DC9AC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52098B1B20B3EE4800DC9AC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

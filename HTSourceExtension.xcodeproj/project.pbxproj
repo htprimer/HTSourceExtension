@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		52098AEA20B3EE3500DC9AC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098AE920B3EE3500DC9AC4 /* AppDelegate.m */; };
-		52098AED20B3EE3600DC9AC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098AEC20B3EE3600DC9AC4 /* ViewController.m */; };
+		52098AED20B3EE3600DC9AC4 /* HTEHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098AEC20B3EE3600DC9AC4 /* HTEHelpViewController.m */; };
 		52098AEF20B3EE3600DC9AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52098AEE20B3EE3600DC9AC4 /* Assets.xcassets */; };
 		52098AF220B3EE3600DC9AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52098AF020B3EE3600DC9AC4 /* Main.storyboard */; };
 		52098AF520B3EE3600DC9AC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098AF420B3EE3600DC9AC4 /* main.m */; };
 		52098B0020B3EE3700DC9AC4 /* HTSourceExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098AFF20B3EE3700DC9AC4 /* HTSourceExtensionTests.m */; };
-		52098B0B20B3EE3700DC9AC4 /* HTSourceExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098B0A20B3EE3700DC9AC4 /* HTSourceExtensionUITests.m */; };
+		52098B1F20B3EE4800DC9AC4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52098B1E20B3EE4800DC9AC4 /* Cocoa.framework */; };
+		52098B2320B3EE4800DC9AC4 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098B2220B3EE4800DC9AC4 /* SourceEditorExtension.m */; };
+		52098B2620B3EE4800DC9AC4 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 52098B2520B3EE4800DC9AC4 /* SourceEditorCommand.m */; };
+		52098B2B20B3EE4800DC9AC4 /* HTSource.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52098B1C20B3EE4800DC9AC4 /* HTSource.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		521B9F5620BCFE430055E360 /* SourcewindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B9F5420BCFE430055E360 /* SourcewindowController.m */; };
+		521B9F5720BCFE430055E360 /* SourcewindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521B9F5520BCFE430055E360 /* SourcewindowController.xib */; };
+		52B18A3820B6E21B00128D9B /* HTEPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B18A3620B6E21B00128D9B /* HTEPanelViewController.m */; };
+		52B18A3920B6E21B00128D9B /* HTEPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B18A3720B6E21B00128D9B /* HTEPanelViewController.xib */; };
+		52B18A3C20B6E2A000128D9B /* HTEWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B18A3B20B6E2A000128D9B /* HTEWindowController.m */; };
+		52E1A41920BD5DED004D4F71 /* SourceHelper.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 52E1A41720BD5B54004D4F71 /* SourceHelper.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,25 +40,60 @@
 			remoteGlobalIDString = 52098AE420B3EE3500DC9AC4;
 			remoteInfo = HTSourceExtension;
 		};
+		52098B2920B3EE4800DC9AC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52098ADD20B3EE3500DC9AC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52098B1B20B3EE4800DC9AC4;
+			remoteInfo = HTSource;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52098B2F20B3EE4800DC9AC4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52098B2B20B3EE4800DC9AC4 /* HTSource.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52098AE520B3EE3500DC9AC4 /* HTSourceExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTSourceExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52098AE820B3EE3500DC9AC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52098AE920B3EE3500DC9AC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		52098AEB20B3EE3600DC9AC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		52098AEC20B3EE3600DC9AC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52098AEB20B3EE3600DC9AC4 /* HTEHelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTEHelpViewController.h; sourceTree = "<group>"; };
+		52098AEC20B3EE3600DC9AC4 /* HTEHelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTEHelpViewController.m; sourceTree = "<group>"; };
 		52098AEE20B3EE3600DC9AC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52098AF120B3EE3600DC9AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52098AF320B3EE3600DC9AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52098AF420B3EE3600DC9AC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		52098AF620B3EE3600DC9AC4 /* HTSourceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HTSourceExtension.entitlements; sourceTree = "<group>"; };
 		52098AFB20B3EE3700DC9AC4 /* HTSourceExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTSourceExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52098AFF20B3EE3700DC9AC4 /* HTSourceExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTSourceExtensionTests.m; sourceTree = "<group>"; };
 		52098B0120B3EE3700DC9AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52098B0620B3EE3700DC9AC4 /* HTSourceExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTSourceExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52098B0A20B3EE3700DC9AC4 /* HTSourceExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTSourceExtensionUITests.m; sourceTree = "<group>"; };
-		52098B0C20B3EE3700DC9AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52098B1C20B3EE4800DC9AC4 /* HTSource.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HTSource.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52098B1E20B3EE4800DC9AC4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		52098B2120B3EE4800DC9AC4 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		52098B2220B3EE4800DC9AC4 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		52098B2420B3EE4800DC9AC4 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		52098B2520B3EE4800DC9AC4 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		52098B2720B3EE4800DC9AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52098B2820B3EE4800DC9AC4 /* HTSource.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HTSource.entitlements; sourceTree = "<group>"; };
+		521B9F5320BCFE430055E360 /* SourcewindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourcewindowController.h; sourceTree = "<group>"; };
+		521B9F5420BCFE430055E360 /* SourcewindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourcewindowController.m; sourceTree = "<group>"; };
+		521B9F5520BCFE430055E360 /* SourcewindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourcewindowController.xib; sourceTree = "<group>"; };
+		52B18A3520B6E21B00128D9B /* HTEPanelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTEPanelViewController.h; sourceTree = "<group>"; };
+		52B18A3620B6E21B00128D9B /* HTEPanelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTEPanelViewController.m; sourceTree = "<group>"; };
+		52B18A3720B6E21B00128D9B /* HTEPanelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTEPanelViewController.xib; sourceTree = "<group>"; };
+		52B18A3A20B6E2A000128D9B /* HTEWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTEWindowController.h; sourceTree = "<group>"; };
+		52B18A3B20B6E2A000128D9B /* HTEWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTEWindowController.m; sourceTree = "<group>"; };
+		52E1A41720BD5B54004D4F71 /* SourceHelper.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = SourceHelper.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +118,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52098B1920B3EE4800DC9AC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52098B1F20B3EE4800DC9AC4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +134,8 @@
 			children = (
 				52098AE720B3EE3500DC9AC4 /* HTSourceExtension */,
 				52098AFE20B3EE3700DC9AC4 /* HTSourceExtensionTests */,
-				52098B0920B3EE3700DC9AC4 /* HTSourceExtensionUITests */,
+				52098B2020B3EE4800DC9AC4 /* HTSource */,
+				52098B1D20B3EE4800DC9AC4 /* Frameworks */,
 				52098AE620B3EE3500DC9AC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +146,7 @@
 				52098AE520B3EE3500DC9AC4 /* HTSourceExtension.app */,
 				52098AFB20B3EE3700DC9AC4 /* HTSourceExtensionTests.xctest */,
 				52098B0620B3EE3700DC9AC4 /* HTSourceExtensionUITests.xctest */,
+				52098B1C20B3EE4800DC9AC4 /* HTSource.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,15 +154,20 @@
 		52098AE720B3EE3500DC9AC4 /* HTSourceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				52E1A41720BD5B54004D4F71 /* SourceHelper.scpt */,
 				52098AE820B3EE3500DC9AC4 /* AppDelegate.h */,
 				52098AE920B3EE3500DC9AC4 /* AppDelegate.m */,
-				52098AEB20B3EE3600DC9AC4 /* ViewController.h */,
-				52098AEC20B3EE3600DC9AC4 /* ViewController.m */,
+				52B18A3A20B6E2A000128D9B /* HTEWindowController.h */,
+				52B18A3B20B6E2A000128D9B /* HTEWindowController.m */,
+				52098AEB20B3EE3600DC9AC4 /* HTEHelpViewController.h */,
+				52098AEC20B3EE3600DC9AC4 /* HTEHelpViewController.m */,
+				52B18A3520B6E21B00128D9B /* HTEPanelViewController.h */,
+				52B18A3620B6E21B00128D9B /* HTEPanelViewController.m */,
+				52B18A3720B6E21B00128D9B /* HTEPanelViewController.xib */,
 				52098AEE20B3EE3600DC9AC4 /* Assets.xcassets */,
 				52098AF020B3EE3600DC9AC4 /* Main.storyboard */,
 				52098AF320B3EE3600DC9AC4 /* Info.plist */,
 				52098AF420B3EE3600DC9AC4 /* main.m */,
-				52098AF620B3EE3600DC9AC4 /* HTSourceExtension.entitlements */,
 			);
 			path = HTSourceExtension;
 			sourceTree = "<group>";
@@ -122,13 +181,28 @@
 			path = HTSourceExtensionTests;
 			sourceTree = "<group>";
 		};
-		52098B0920B3EE3700DC9AC4 /* HTSourceExtensionUITests */ = {
+		52098B1D20B3EE4800DC9AC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52098B0A20B3EE3700DC9AC4 /* HTSourceExtensionUITests.m */,
-				52098B0C20B3EE3700DC9AC4 /* Info.plist */,
+				52098B1E20B3EE4800DC9AC4 /* Cocoa.framework */,
 			);
-			path = HTSourceExtensionUITests;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52098B2020B3EE4800DC9AC4 /* HTSource */ = {
+			isa = PBXGroup;
+			children = (
+				52098B2120B3EE4800DC9AC4 /* SourceEditorExtension.h */,
+				52098B2220B3EE4800DC9AC4 /* SourceEditorExtension.m */,
+				52098B2420B3EE4800DC9AC4 /* SourceEditorCommand.h */,
+				52098B2520B3EE4800DC9AC4 /* SourceEditorCommand.m */,
+				52098B2720B3EE4800DC9AC4 /* Info.plist */,
+				52098B2820B3EE4800DC9AC4 /* HTSource.entitlements */,
+				521B9F5320BCFE430055E360 /* SourcewindowController.h */,
+				521B9F5420BCFE430055E360 /* SourcewindowController.m */,
+				521B9F5520BCFE430055E360 /* SourcewindowController.xib */,
+			);
+			path = HTSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +215,12 @@
 				52098AE120B3EE3500DC9AC4 /* Sources */,
 				52098AE220B3EE3500DC9AC4 /* Frameworks */,
 				52098AE320B3EE3500DC9AC4 /* Resources */,
+				52098B2F20B3EE4800DC9AC4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52098B2A20B3EE4800DC9AC4 /* PBXTargetDependency */,
 			);
 			name = HTSourceExtension;
 			productName = HTSourceExtension;
@@ -187,6 +263,23 @@
 			productReference = 52098B0620B3EE3700DC9AC4 /* HTSourceExtensionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		52098B1B20B3EE4800DC9AC4 /* HTSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52098B2C20B3EE4800DC9AC4 /* Build configuration list for PBXNativeTarget "HTSource" */;
+			buildPhases = (
+				52098B1820B3EE4800DC9AC4 /* Sources */,
+				52098B1920B3EE4800DC9AC4 /* Frameworks */,
+				52098B1A20B3EE4800DC9AC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTSource;
+			productName = HTSource;
+			productReference = 52098B1C20B3EE4800DC9AC4 /* HTSource.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +291,11 @@
 				TargetAttributes = {
 					52098AE420B3EE3500DC9AC4 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					52098AFA20B3EE3700DC9AC4 = {
 						CreatedOnToolsVersion = 9.3;
@@ -206,6 +304,17 @@
 					52098B0520B3EE3700DC9AC4 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 52098AE420B3EE3500DC9AC4;
+					};
+					52098B1B20B3EE4800DC9AC4 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -225,6 +334,7 @@
 				52098AE420B3EE3500DC9AC4 /* HTSourceExtension */,
 				52098AFA20B3EE3700DC9AC4 /* HTSourceExtensionTests */,
 				52098B0520B3EE3700DC9AC4 /* HTSourceExtensionUITests */,
+				52098B1B20B3EE4800DC9AC4 /* HTSource */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +346,8 @@
 			files = (
 				52098AEF20B3EE3600DC9AC4 /* Assets.xcassets in Resources */,
 				52098AF220B3EE3600DC9AC4 /* Main.storyboard in Resources */,
+				52E1A41920BD5DED004D4F71 /* SourceHelper.scpt in Resources */,
+				52B18A3920B6E21B00128D9B /* HTEPanelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +365,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52098B1A20B3EE4800DC9AC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521B9F5720BCFE430055E360 /* SourcewindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,9 +380,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52098AED20B3EE3600DC9AC4 /* ViewController.m in Sources */,
+				52098AED20B3EE3600DC9AC4 /* HTEHelpViewController.m in Sources */,
 				52098AF520B3EE3600DC9AC4 /* main.m in Sources */,
+				52B18A3820B6E21B00128D9B /* HTEPanelViewController.m in Sources */,
 				52098AEA20B3EE3500DC9AC4 /* AppDelegate.m in Sources */,
+				52B18A3C20B6E2A000128D9B /* HTEWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52098B0B20B3EE3700DC9AC4 /* HTSourceExtensionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52098B1820B3EE4800DC9AC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52098B2320B3EE4800DC9AC4 /* SourceEditorExtension.m in Sources */,
+				521B9F5620BCFE430055E360 /* SourcewindowController.m in Sources */,
+				52098B2620B3EE4800DC9AC4 /* SourceEditorCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +425,11 @@
 			isa = PBXTargetDependency;
 			target = 52098AE420B3EE3500DC9AC4 /* HTSourceExtension */;
 			targetProxy = 52098B0720B3EE3700DC9AC4 /* PBXContainerItemProxy */;
+		};
+		52098B2A20B3EE4800DC9AC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52098B1B20B3EE4800DC9AC4 /* HTSource */;
+			targetProxy = 52098B2920B3EE4800DC9AC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -422,9 +558,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HTSourceExtension/HTSourceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NPHK4GA7Z3;
 				INFOPLIST_FILE = HTSourceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,6 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = htprimer.HTSourceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -439,9 +577,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HTSourceExtension/HTSourceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NPHK4GA7Z3;
 				INFOPLIST_FILE = HTSourceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = htprimer.HTSourceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -522,6 +662,48 @@
 			};
 			name = Release;
 		};
+		52098B2D20B3EE4800DC9AC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HTSource/HTSource.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NPHK4GA7Z3;
+				INFOPLIST_FILE = HTSource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = htprimer.HTSourceExtension.HTSource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		52098B2E20B3EE4800DC9AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HTSource/HTSource.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NPHK4GA7Z3;
+				INFOPLIST_FILE = HTSource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = htprimer.HTSourceExtension.HTSource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +739,15 @@
 			buildConfigurations = (
 				52098B1620B3EE3700DC9AC4 /* Debug */,
 				52098B1720B3EE3700DC9AC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52098B2C20B3EE4800DC9AC4 /* Build configuration list for PBXNativeTarget "HTSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52098B2D20B3EE4800DC9AC4 /* Debug */,
+				52098B2E20B3EE4800DC9AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

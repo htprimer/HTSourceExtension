@@ -6,22 +6,19 @@
 //  Copyright © 2018年 John. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HTEHelpViewController.h"
 
-@implementation ViewController
+@implementation HTEHelpViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-
-	// Do any additional setup after loading the view.
+	self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
 }
-
 
 - (void)setRepresentedObject:(id)representedObject {
 	[super setRepresentedObject:representedObject];
-
+	
 	// Update the view, if already loaded.
 }
-
 
 @end
